@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Insurance Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: auto;
+        } 
+        .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgb(243, 247, 248);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+
+        .header {
+            background-color: hsl(0, 3%, 14%);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(229, 234, 229);">
+
+<div class="container">
+    <div class="header">
+        <h2>Online Insurance Management</h2>
+    </div>
+    <form>
+    <div >
+        <label >Insurance ID:</label>
+        <input class="form-control" type="text" name="insurance_id" placeholder="Enter Insurance ID">
+    </div><br>
+
+    <div >
+        <label >Customer Name:</label>
+        <input class="form-control" type="text" name="customer_name" placeholder="Enter Customer Name">
+    </div><br>
+
+    <div >
+        <label>Policy Type:</label><br>
+        <input class="form-control" type="text" name="policy_type" placeholder="Enter Policy Type">
+    </div><br>
+
+    <div >
+        <label >Sum Insured:</label>
+        <input class="form-control" type="text" name="sum_insured" placeholder="Enter Sum Insured">
+    </div><br>
+
+    <div >
+        <label >Premium Amount:</label>
+        <input class="form-control" type="text" name="premium_amount" placeholder="Enter Premium Amount">
+    </div><br>
+   <center><button type="submit">submit</button><center>
+</div><br>
+</form>
+</body>
+</html>

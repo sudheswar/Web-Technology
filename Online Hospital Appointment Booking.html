@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Online Hospital Appointment Booking</title>
+    <style>
+       .header {
+        text-align: center;
+        background-color: rgb(185, 217, 234);
+    }
+      body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf63;
+            color: #f1eeee;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(228, 236, 236);
+        }
+    </style>
+</head>
+<body style="background-color:hsl(0, 6%, 97%)33%, 96%);">
+    <div class="background"></div> 
+    <div class="text-container"> 
+    </div>
+    <div class="body">
+    <div class="header">
+        <h1>Online Hospital Appointment Booking</h1>
+    </div> 
+
+    <form id="appointmentForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="drSmith">Dr. Sarathi</option>
+            <option value="drJohnson">Dr. vasan</option>
+           
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <input type="submit" value="Book Appointment">
+    </form>
+
+    <script>
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var formData = new FormData(event.target);
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+
+            alert("Appointment booked successfully!");
+        });
+    </script>
+
+</body>
+</html>
