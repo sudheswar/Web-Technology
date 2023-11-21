@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Online Toll Gate Payment</title>
+    <style>
+    
+    .background { 
+            position: absolute; 
+            height: 100%; 
+            width: 100%; 
+            background-image: url( "toll gate.jpeg"); 
+            background-size: cover; 
+            background-position:center; 
+            filter: blur(10px); 
+            z-index: -1; 
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+         
+        header {
+            background-color: hwb(0 20% 80%);
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+        }
+        footer {
+            background-color: hsl(0, 0%, 20%);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-color:#f9f8f8;">
+    <div class="background"></div> 
+    <div class="text-container"> 
+    <header>
+        <h1>Online Toll Gate Payment</h1>
+    </header>
+
+    <section><center>
+        <form >
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input type="text" id="vehicleNumber" name="vehicleNumber" required><br><br>
+
+                <label for="payment_method">Payment Method</label>
+                <select id="payment_method" name="payment_method">
+                    <option value="credit_card">Credit Card</option>
+                    <option value="debit_card">Debit Card</option>
+                    <option value="net_banking">Net Banking</option>
+                </select><br><br>
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required><br><br>
+
+            <input type="submit" value="Pay Now">
+        </form></center>
+    </section>
+
+</body>
+</html>
