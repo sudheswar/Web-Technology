@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Rental Vehicle System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .form-group button {
+            background-color: #479861;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Rental Vehicle System</h1>
+        <form action="/submit-rental" method="post">
+            <div class="form-group">
+                <label for="pickup_location">Pickup Location:</label>
+                <input type="text" id="pickup_location" name="pickup_location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff_location">Dropoff Location:</label>
+                <input type="text" id="dropoff_location" name="dropoff_location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup_date">Pickup Date:</label>
+                <input type="date" id="pickup_date" name="pickup_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff_date">Dropoff Date:</label>
+                <input type="date" id="dropoff_date" name="dropoff_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select id="vehicle_type" name="vehicle_type" required>
+                    <option value="car">Car</option>
+                    <option value="van">Van</option>
+                    <option value="suv">SUV</option>
+                    <option value="pickup">Pickup</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Rental</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
