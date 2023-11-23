@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #3fa968;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b36b;
+}
+</style>
+    <title>Car Service App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Service App</h1>
+        <form id="register-form">
+            <label for="car-name">Car Name:</label>
+            <select id="car-name" name="car-name">
+                <option value="car1">Car 1</option>
+                <option value="car2">Car 2</option>
+                <option value="car3">Car 3</option>
+            </select>
+
+            <label for="problem">Problem:</label>
+            <select id="problem" name="problem">
+                <option value="engine">Engine</option>
+                <option value="transmission">Transmission</option>
+                <option value="brakes">Brakes</option>
+            </select>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
